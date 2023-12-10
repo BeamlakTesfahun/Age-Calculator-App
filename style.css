@@ -1,0 +1,116 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* @font-face {
+  font-family: Pop;
+  src: url(age-calculator-app-main\Poppins-Regular.ttf);
+} */
+/*all element set to Poppins*/
+* {
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+  background-color: #ffff;
+  border-radius: 20px;
+  width: 420px;
+  max-width: 80%;
+  padding: 30px;
+  border-bottom-right-radius: 180px;
+  position: relative;
+}
+input {
+  border-radius: 5px;
+  width: 70px;
+  border: 2px solid hsl(0, 0%, 94%);
+  outline: none;
+  padding: 10px;
+}
+input:focus {
+  border: 2px solid hsl(259, 100%, 65%);
+}
+.font-span {
+  font-size: 10px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+/* #days,
+#months,
+#years {
+  color: #808080;
+} */
+.days-error,
+.months-error,
+.years-error {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.enter-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+.container2 {
+  display: flex;
+  border-bottom: 2px solid hsl(0, 0%, 94%);
+  margin-bottom: 10px;
+}
+.submit-button {
+  background-color: hsl(259, 100%, 65%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  top: 83px;
+  right: 30px;
+}
+.submit-button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+.calculation-container span {
+  color: hsl(259, 100%, 65%);
+  font-size: 32px;
+  font-style: italic;
+}
+.calculation-container h1 {
+  font-size: 40px;
+}
+/*To make responsive*/
+@media (max-width: 768px) {
+  input {
+    width: 80%;
+  }
+  .calculation-container {
+    font-size: 28px;
+  }
+  .submit-button {
+    width: 40px;
+    height: 40px;
+    right: 40%;
+    top: 90px;
+  }
+  .submit-button img {
+    transform: scale(0.5);
+  }
+}

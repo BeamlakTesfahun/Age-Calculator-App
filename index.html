@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container2">
+        <div class="enter-container">
+          <span class="font-span">Day</span>
+          <input type="number" id="days" placeholder="DD" />
+          <span class="days-error"></span>
+        </div>
+        <div class="enter-container">
+          <span class="font-span">Month</span>
+          <input type="number" id="months" placeholder="MM" />
+          <span class="months-error"></span>
+        </div>
+        <div class="enter-container">
+          <span class="font-span">Year</span>
+          <input type="number" id="years" placeholder="YYYY" />
+          <span class="years-error"></span>
+        </div>
+      </div>
+      <button class="submit-button">
+        <img
+          src="C:\Users\Tesfahun Sahilu\Documents\Yenetta\age-calculator-app-main\assets\images\icon-arrow.svg"
+          alt="submit-arrow"
+        />
+      </button>
+      <div class="calculation-container">
+        <h1><span class="display-years">--</span> years</h1>
+        <h1><span class="display-months">--</span> months</h1>
+        <h1><span class="display-days">--</span> days</h1>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
